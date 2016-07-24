@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="https://overwatch-a.akamaihd.net/img/favicon-bb6200267bbdea6fdc9eb498a88722007dad6eb3b3c6437440025c66cb055fefdd1fbedf3886bd069fc3547c79fa8afee4795a278a644f6cfe10a7b1144f48bb.ico">
+	<title>Overwatch - LFG</title>
+	<link rel="stylesheet" href="https://npmcdn.com/normalize.css">
+	<link rel="stylesheet" href="css/h5bp.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
+</head>
+ <body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="images/logo-white.png"></a>
+			</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="yellow-nav"><a href="#!">Log In</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+		</div>
+		<div class="nav-border"></div>
+	</nav>
+
+
+	<div class="container-fluid dark-background">
+	<section class="container">
+	<div class="panel panel-default section-border">
+		<div class="panel-heading">
+			<a class="heading" href="#group-info" data-toggle="collapse" aria-expanded="true"><h2>Post Your Group</h2></a>
+			<hr class="hr-black">
+		</div>
+		<div class="panel-body collapsed collapse in" id="group-info" aria-expanded="true" data-persist="persist">
+			<form class="form-horizontal form-container" role="form">
+				<div class="form-group row">
+					<div class="col-sm-4 notes-input">
+						<label for="group-notes-input" class="label-compact">Battlenet ID (replace the # with - )</label>
+						<input type="text" id="player-tag" name="playertag" class="form-control" maxlength="500" placeholder="eg: Timus-1940 or Grizzer-11798">
+					</div>
+					<div class="col-sm-4">
+						<label for="group-platform-select" class="label-compact">Platform</label>
+						<select id="platform-value" name="platform" class="form-control">
+							<option value="pc">Pc</option>
+							<option value="x1">Xbox One</option>
+							<option value="ps4">PlayStation 4</option>
+						</select>
+					</div>
+					<div class="col-sm-4 region-select">
+						<label for="region-value" class="label-compact">Region</label>
+						<select id="region-value" name="region" class="form-control">
+							<option value="us">America</option>
+							<option value="eu">Europe</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-4">
+						<label for="gamemode-value" class="label-compact">Game Mode</label>
+						<select id="gamemode-value" name="gamemode" class="form-control">
+							<option value="quick-play">Quick Play</option>
+							<option value="comp">Competitive</option>
+						</select>
+					</div>
+					<div class="col-sm-8 notes-input">
+						<label for="notes-value" class="label-compact">Notes</label>
+						<input type="text" id="notes-value" name="notes" class="form-control" maxlength="500" placeholder="Looking to play as healer">
+					</div>
+				</div>
+				<div class="col-xs-12 submit-input">
+					<button class="yellow-btn" id="create-lfg">List group</button>
+				</div>
+			</form>      
+		</div>
+	</div>
+	</section>
+	</div>
+	<!-- /.container -->
+
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="dark-heading">Users Looking For Group</h2>
+				<hr class="hr-black">
+			</div>
+			<div class="lfg-container">
+				<!-- list renders here -->
+			</div>
+		</div>
+	</section>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- DOM Utility functions -->
+	<script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
+		<!-- Our code -->
+	<script src="js/app.js"></script>
+
+</body>
+</html>
