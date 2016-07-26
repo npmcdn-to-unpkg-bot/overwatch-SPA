@@ -3,7 +3,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="https://overwatch-a.akamaihd.net/img/favicon-bb6200267bbdea6fdc9eb498a88722007dad6eb3b3c6437440025c66cb055fefdd1fbedf3886bd069fc3547c79fa8afee4795a278a644f6cfe10a7b1144f48bb.ico">
@@ -11,10 +10,12 @@
 	<link rel="stylesheet" href="https://npmcdn.com/normalize.css">
 	<link rel="stylesheet" href="css/h5bp.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
- <body>
+
+<body>
+ 	<!-- Navbar -->
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -38,8 +39,9 @@
 		</div>
 		<div class="nav-border"></div>
 	</nav>
+	<!-- End Nav -->
 
-
+	<!-- Input section where user enters their details -->
 	<div class="container-fluid dark-background">
 	<section class="container">
 	<div class="panel panel-default section-border">
@@ -58,8 +60,8 @@
 						<label for="group-platform-select" class="label-compact">Platform</label>
 						<select id="platform-value" name="platform" class="form-control">
 							<option value="pc">Pc</option>
-							<option value="x1">Xbox One</option>
-							<option value="ps4">PlayStation 4</option>
+							<option value="xbl">Xbox One</option>
+							<option value="psn">PlayStation 4</option>
 						</select>
 					</div>
 					<div class="col-sm-4 region-select">
@@ -75,7 +77,7 @@
 						<label for="gamemode-value" class="label-compact">Game Mode</label>
 						<select id="gamemode-value" name="gamemode" class="form-control">
 							<option value="quick-play">Quick Play</option>
-							<option value="comp">Competitive</option>
+							<option value="competitive-play">Competitive</option>
 						</select>
 					</div>
 					<div class="col-sm-8 notes-input">
@@ -84,34 +86,44 @@
 					</div>
 				</div>
 				<div class="col-xs-12 submit-input">
-					<button class="yellow-btn" id="create-lfg">List group</button>
+					<button class="yellow-btn" id="create-lfg">Post Your Request</button>
 				</div>
-			</form>      
+			</form>
 		</div>
 	</div>
 	</section>
 	</div>
-	<!-- /.container -->
+	<!-- End container -->
 
-	<section class="container">
+	<!-- Render container for LFG app -->
+	<section class="container margin-bottom">
 		<div class="row">
 			<div class="col-xs-12">
 				<h2 class="dark-heading">Users Looking For Group</h2>
 				<hr class="hr-black">
 			</div>
 			<div class="lfg-container">
-				<!-- list renders here -->
+			<!-- Loading Screen -->
+				<div class="second-wrapper">
+					<div class="circle-loader">
+						<div class="circle circle_four"></div>
+						<div class="circle circle_three"></div>
+						<div class="circle circle_two"></div>
+						<div class="circle circle_one"></div>
+					</div>
+				</div>
+			<!-- End Loading Screen -->
+			<!-- list renders here -->
 			</div>
 		</div>
 	</section>
 	
+	<!-- Scripts -->
 	<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<!-- DOM Utility functions -->
 	<script src="https://rawgit.com/jesstelford/a981e6877034231bd43b526a07b3a7b4/raw/js1-utilities.js"></script>
-		<!-- Our code -->
 	<script src="js/app.js"></script>
-
 </body>
 </html>
