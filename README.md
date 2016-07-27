@@ -1,5 +1,6 @@
 # ![](http://i.imgur.com/xeouJP9.png) Overwatch - Looking For Group App: Single Page App
 ## How to use from this Code!
+
 I have taken out the Firebase keys and server details from github to keep my database details secure. If you would like to run this code please sign up (for free) to www.firebase.com and follow the very simple instructions to get your own Key and then add it to the app.js file where indicated in the code! ENJOY!
 --- 
 ## Overview
