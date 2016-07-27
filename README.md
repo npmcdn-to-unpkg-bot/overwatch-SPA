@@ -1,4 +1,4 @@
-# ![](http://imgur.com/a/2oB4s) Overwatch - Looking For Group App: Single Page App
+# ![](http://i.imgur.com/xeouJP9.png) Overwatch - Looking For Group App: Single Page App
 
 ## Overview
 Overwatch is a team based first person shooter game that allows users to choose from one of four categories (attack, defence, tank and support). The idea of the game is to create a balanced team between damage, healing, defence and tanks. The key to winning is a strong team. As this game is slowly becoming the next big E-Sports game I decided to make a single page app that allows users to enter their player details to post a request to form a team. The idea is that with the stats of the players and forming a balanced team you can have a better chance at winning.
