@@ -5,11 +5,11 @@ I have taken out the Firebase keys and server details from github to keep my dat
 
 --- 
 ## Overview
-Overwatch is a team based first person shooter game that allows users to choose from one of four categories (attack, defence, tank and support). The idea of the game is to create a balanced team between damage, healing, defence and tanks. The key to winning is a strong team. As this game is slowly becoming the next big E-Sports game I decided to make a single page app that allows users to enter their player details to post a request to form a team. The idea is that with the stats of the players and forming a balanced team you can have a better chance at winning.
+Overwatch is a team based first person shooter game that allows users to choose from one of four categories (attack, defence, tank and support) where each category has approximately 4 heroes to choose from. The idea of the game is to create a balanced team between damage, healing, defence and tanks. The key to winning is a strong team that works together. As this game is slowly becoming the next big E-Sports game I decided to make a single page app that allows users to enter their player details to post a request to form a team. The idea is that with the stats of the players, you can form a balanced team and have a better chance at winning.
 
 ### Side Note on Speed
 
-As a side note, this is a new game. The API i'm using is an official one as Blizzard hasn't released their API yet. It pulls current data but it's rather slow and requires to fetches (using promise.all) to get all the data I wanted. So appologies if it's a bit slow loading!
+As a side note, this is a new game. The API i'm using is an official one as Blizzard hasn't released their API yet. It pulls current data but it's rather slow and requires to fetches (using promise.all) to get all the data I wanted. So appologies if it's a bit slow loading! I will update the API with the official one, once Blizzard releases it.
 
 
 ### Collecting User Details
