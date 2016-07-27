@@ -25,12 +25,13 @@
 	}
 
 	var container = document.querySelector('.lfg-container')
-	var getDate = new Date().getTime() / 1000
-	state.postTime = getDate
+	
 
 	// Collect all data to perform the render
 	delegate('.dark-background','click','.yellow-btn', (event) => {
 		event.preventDefault()
+		var getDate = new Date().getTime() / 1000
+		state.postTime = getDate
 		var playertagValue = document.querySelector('#player-tag').value
 		var platformValue = document.querySelector('#platform-value').value
 		var regionValue = document.querySelector('#region-value').value

@@ -54,7 +54,7 @@ As the update feature, I've added a checkbox to update when a user has found a g
 
 ### Time Posted Feature
 
-As an added feature i've added a time since posted function. At the time of rendering i capture the current date using new Date().getTime() / 1000 (second part to turn it into epoch number instead of date format which is needed for the function). The function then compares the current time to the time that the post was created. This is then rendered in either: Seconds, Minutes, Hours or Years since the post was created.
+As an added feature i've added a time since posted function. At the time of rendering i capture the current date using new Date().getTime() / 1000 (second part to turn it into epoch number instead of date format which is needed for the function). The function then compares the current time to the time that the post was created. This is then rendered in either: Seconds, Minutes, Hours or Years since the post was created. To make sure it gets an accurate read of when the post is created, I've moved the new Date().getTime() function into the delegate on click of the post your request. This grabs the current time on click.
 
 ---
 
